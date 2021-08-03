@@ -131,26 +131,31 @@ document.write("Nice to see you here " + username + "!");
              }
 
 
-                    let guessAct = ['gym', 'eating', 'watching my classes', 'music'];
-                    let sevAnswer = Number(prompt("Seventh Question: Guess my favorite activity in my day, You have only 6 attempts"))
-                    
-                    for (let j = 1; j<= 6; j++){
-                         for(let y = 0; y < guessAct.length; y++){
-                               if(sevAnswer.toLowerCase() === guessAct[y].toLowerCase){
-                                alert('Great!, You guessed')
-                                break;
-                               } 
-                               else{
-                                   alert("Try again")
-                               }
-                            }
-                            if(sevAnswer.toLowerCase() !== guessAct[y].toLowerCase){
+            let sevenAnswer = prompt("Question seven: Guess my favorite activity in my day, You have only 6 attempts");
+             let activity = ['gym', 'eating', 'watching movie'];
+             
+             for (let i = 1; i <= 6; i++){
 
-                                alert('The correct answer was one of those Gym, music, eating');
-                            }
-                                       
-                        
-                    }
+                 for (let j = 0; j < activity.length; j++){
+                    sevenAnswer = sevenAnswer.toLowerCase();
+                     if(sevenAnswer === activity[j]){
 
-                    alert(' Thank you for playing this game ' + username + '  your score from 7 is  '+ score);
+                         alert("You have guessed");
+                         i =7;
+                         break;
+                     }
+                   }
+
+                 if(i === 6){
+                     alert("You have take all the attempts");
+                 }
+                 
+                }
+
+                for(let y = 0; y < activity.length; y++){
+                    alert("my favorite activity was those: "+ activity[y]);
+                }
+            
+                alert(' Thank you for playing this game ' + username + '  your score from 7 is  '+ score);
+          
                 
