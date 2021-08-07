@@ -189,12 +189,17 @@ function QuestionSeven(){
             alert('You have take all the attempts');
         }
     }
+    alert('my favorite activity was those: '+ activity);
+
+alert(' Thank you for playing this game ' + username + '  your score is '+ score + ' from 7');
 
 }
 
 QuestionSeven();
 
-alert('my favorite activity was those: '+ activity);
 
-alert(' Thank you for playing this game ' + username + '  your score is '+ score + ' from 7');
+// alert('my favorite activity was those: '+ activity);
+
+// alert(' Thank you for playing this game ' + username + '  your score is '+ score + ' from 7');
+
 

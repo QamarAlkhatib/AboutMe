@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About me</title>
 </head>
 <body>
-    <header> 
-        <h1 class="name" id="name"><span>I'm</span> Qamar Alkhatib. <br><p>Software Engineer</p> </br> </h1></h1>
+    <header>
         
+        <h1 class="name" id="name"><span><p>I'm Qamar Alkhatib.<br>Software Engineer</br> </p></span></h1></h1>
+        <!-- ?<script src="JS/app.js"></script> -->
+        <!-- <button class="button" type="button" value="Submit" onclick="JS/app.js" style="vertical-align:middle"><span>Play Guessing Game </span></button> -->
+        
+        <a href='JS/app.js' class="button" id='mylink' style="vertical-align:middle"><span>Play Guessing Game</span></a>
+
+        <script type="text/javascript">
+        
+        var myLink = document.getElementById('mylink');
+        
+        myLink.onclick = function(){
+        
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "JS/app.js"; 
+            document.getElementsByTagName("head")[0].appendChild(script);
+            return false;
+        
+        }
+        
+        
+        </script>
+   
     </header>
     <main>
 
@@ -19,9 +42,9 @@
                 <h2 style="font-size: 30px; font-weight: bolder;">About me</h2>
                 <div><nav>
                     <ul>
-                        <li>Currently I'm Studying Software Engineering at Abdul aziz Al Ghurair school of advanced computing, and it was great to know what is behind the softwares from architect to How its works to creating one</li>
-                        <li>Through my studies I got interested in security stuff and I took cyber security certified from StationX </li>
-                        <li>I attend in global solutions sustainability challenge and it was great to take such an experience</li>
+                        <li>Currently I'm Studying Software Engineering at Abdul aziz Al Ghurair school of advanced computing, and it was great to know what is <br>behind the softwares from architect to How its works to creating one.</li>
+                        <li>Through my studies I got interested in security stuff and I took cyber security certified from StationX. </li>
+                        <li>I attend in global solutions sustainability challenge and it was great to take such an experience.</li>
                         
                         <li>And now, I'm learning web development
                          <br> I have many future goals, and the main one is to work as a Software Engineering in a aerospace industry </br></li>                
@@ -29,79 +52,56 @@
                 </div> </nav>
          </section>
 
-            <h3 class="Education"> My Education</h3>
+            <section class="Education" id="education">
+            <h4 style="font-size: 30px; font-weight: bolder;">My Education</h4>
+
             <ol>
                 <li>
-
+                    •	Software Engineering, Higher International Diploma – Luminus Technical University College (School of Advanced Technology) 2019 - 2021
+                </li>
+                <li>
+                    •	Web development,     Code fellows boot-camp course – Luminus Technical University College (School of Advanced Technology) 2021- 2021
                 </li>
             </ol>
+            </section>
            
             <section class="work" id="work">
-            <h4 style="font-size: 30px; font-weight: bolder;"> My Work experience</h4>
+            <h4 style="font-size: 30px; font-weight: bolder;">My Work experience</h4>
             <ol>
                 <li>
-                    - Student ambassador At ASAC - LTUC  08-2020 to 10-2020
+                    • Student ambassador At ASAC - LTUC  08-2020 to 10-2020
                 </li>                
                 <li>
-                    - Student ambassador At ASAC - LTUC  02-2021 to 03-2021
+                    • Student ambassador At ASAC - LTUC  02-2021 to 03-2021
                 </li>
             </ol>
             </section>
-            <section class="skills" id="skills">
-            <h5 style="font-size: 30px; font-weight: bolder;"> My Skills</h5>
-            <p>Java</p>
-            
-            <div class="Java" style="height:28px;width:95%"></div>
-            
+
+            <section class="TopTenBooks">
+                <h3 style="color: #F05454; font-size: 30px; font-weight: bolder;"> My Top Ten Books so far</h3>
+                <div><nav>
+                    <ol style="list-style:disc;">
+                        <li>Life 3.0</li>
+                        <li>Ego is the enemy</li>
+                        <li>Thinking Fast and slow</li>
+                        <li>Universe from nothing</li>
+                        <li>How to be comfortable with being uncomfortable</li>
+                        <li>Can cows walk down stairs</li>
+                        <li>Don't make me think</li>
+                        <li>12 rules for life</li>
+                        <li>Knowledge Encyclopedia space</li>
+                        <li>The happy brain</li>
+                    </ol>
+                </div> </nav>
             </section>
 
-
       </main>
-
       <footer>
-        <h5> &copy; CopyRight Qamar 2021 </h5>
-        </footer>
-        <!-- <h4 Tahoma, Geneva, Verdana, sans-serif;"> I'm Happy to see you in my website!, My Name is Qamar 20 years old, And lets play a game!</h4>
-
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2F2Fn8aQmNRBNN067akLV92dceSmmJtbB0AEcSG5-5wKKZW7qA9-Bs63shtDyCL3DCcFU%3Dw300&f=1&nofb=1" alt=""></a>
-    
-        <section class="AboutME">
+        &copy; CopyRight Qamar 2021 
         
-            <h4 Tahoma, Geneva, Verdana, sans-serif;"><h4 style="color: #f4db7d; font-weight: bold;">But before we play the game I want to talk about myself </h4></h4>
-            <div><nav>
-                <ul>
-                    <li>Currently I'm Studying Software Engineering at Abdul aziz Al Ghurair school of advanced computing, and it was great to know what is behind the softwares from architect to How its works to creating one</li>
-                    <li>Through my studies I got interested in security stuff and I took cyber security certified from StationX </li>
-                    <li>I attend in global solutions sustainability challenge and it was great to take such an experience</li>
-                    <li>Also, I worked as a student ambassador for about 4 months and a half And really Enjoyed</li>
-                    <li>And now, I'm learning web development
-                     <br> I have many future goals, and the main one is to work as a Software Engineering in a aerospace industry </br></li>                
-                </ul>
-            </div> </nav>
-        </section>
+            <a href="https://github.com/QamarAlkhatib" class="fa fa-github"></a>
+          
+        </footer>
 
-        <section class="TopTenBooks">
-            <h3 style="color: #B2E46B; font-weight: bolder; text-align: center ;"> My Top Ten Books so far</h3>
-            <div><nav>
-                <ol style="list-style:disc;">
-                    <li>Life 3.0</li>
-                    <li>Ego is the enemy</li>
-                    <li>Thinking Fast and slow</li>
-                    <li>Universe from nothing</li>
-                    <li>How to be comfortable with being uncomfortable</li>
-                    <li>Can cows walk down stairs</li>
-                    <li>Don't make me think</li>
-                    <li>12 rules for life</li>
-                    <li>Knowledge Encyclopedia space</li>
-                    <li>The happy brain</li>
-                </ol>
-            </div> </nav>
-        </section>
-    <h3 style="color: #ff6a3d; font-weight: bolder;"> If you would like to share your result with me, Send it through discord: Qamar Alkhatib#0017, I would like to see it!</h3>
-    </main>
-    <footer>
-    <h5> &copy; CopyRight Qamar 2021 </h5>
-    </footer>
-  <script src="JS/app.js"></script> -->
 </body>
 </html>
