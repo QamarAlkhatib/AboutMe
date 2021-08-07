@@ -3,28 +3,17 @@
     font-size:  25px;
     font-family: monospace;
     color: white;
-    
-}
-
+    scroll-behavior: smooth;
+  }
 body{
     background-color:  #222831;
-    /* margin-bottom: 12px; */
-    /* padding: 100px; */
-    /* margin : 100px; */
-}
-/* body, h1,h2,h3,h4,h5 {
-    font-family: "Montserrat", sans-serif;
-    /* margin-bottom: 12px; */
+  }
 
-
-/* } */ 
 
 #name {
-    /* background-color:#0F4C75 ;
-     */
-    background-color: rgb(232, 232, 232); 
     
-    text-align: center;
+    background-color: rgb(232, 232, 232); 
+        text-align: center;
     padding: 50px;
     font-weight: bolder;
     font-size: 30px;
@@ -36,11 +25,13 @@ body{
   width:100%;
   overflow:hidden;
   
+  
 }
 #name p{
     font-size: 25px;
     font-weight: bold;
     animation: name 5s;
+    
     
 }
 @keyframes name {
@@ -84,7 +75,8 @@ body{
     font-size: 20px;
     line-height: 2;
     margin-left: 70px;
-
+    background-color: black;
+    color: white;
 } 
 .button {
     border-radius: 50px;
@@ -159,4 +151,3 @@ body{
     background: #000000;
     color: white;
   }
-  

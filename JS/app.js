@@ -196,10 +196,3 @@ alert(' Thank you for playing this game ' + username + '  your score is '+ score
 }
 
 QuestionSeven();
-
-
-// alert('my favorite activity was those: '+ activity);
-
-// alert(' Thank you for playing this game ' + username + '  your score is '+ score + ' from 7');
-
-
